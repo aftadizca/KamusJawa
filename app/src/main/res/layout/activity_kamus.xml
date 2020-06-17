@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="20dp"
+    tools:context=".kamus">
+
+        <TextView
+            android:id="@+id/txtvw_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Kata (Bahasa Indonesia)"
+            android:textColor="#000000"
+            android:textSize="8pt"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/txtvw_pb">
+
+                <EditText
+                    android:id="@+id/edtxt_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textSize="8pt"
+                    android:inputType="text"
+                    android:hint="Masukkan Kata" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"/>
+
+                <ImageButton
+                    android:id="@+id/btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:background="#ffffff"
+                    android:src="@drawable/ic_cari"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/terjemahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linear1"
+            android:text="Hasil Terjemahan"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="8pt"/>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/terjemahan">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:text="Indonesia"
+                    android:textColor="#000000"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/katainput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textSize="8pt"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:text="Perbaikan Kata"
+                    android:textColor="#000000"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/perbaikan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textSize="8pt"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear3">
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.80"
+                    android:text="Jawa"
+                    android:textColor="#000000"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"
+                    android:textColor="#000000"
+                    android:text=":"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/hasil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textSize="8pt"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+</RelativeLayout>
